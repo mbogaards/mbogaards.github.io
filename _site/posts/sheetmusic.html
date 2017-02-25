@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>Maarten Bogaards</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="site/css/reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+	</header>
+	
+	<nav class="main-nav">
+		<a href="../index.html#portfolio"><img class="small_logo" src="images/small_logo.png">	</a>
+	</nav><!-- #site-navigation -->
+	
+	<div class="main">
+
+		<div class="project-wrap"> 
+			<div class="title-text">
+			<h1 class="sectiontitle">Sheet music</h1>
+			<p>Zelf geschreven.</p>
+				</div>
+			<img src="../site/images/sheetmusic/main.jpg">
+			<p class="project-text">Ik schrijf eigen pianocomposities, maar ik vind het best wel vervelend dat als ik ermee op ga treden dat mensen dan meteen zeggen "Dat heeft hij niet zelf geschreven."
+
+Ik besteed namelijk aardig wat tijd aan een compositie en het voelt eerlijk gezegd alsof mensen, met zo’n opmerking, mijn muziek gelijk omlaag halen.
+
+Hoe kun je mensen duidelijk maken dat je je muziek echt zelf hebt geschreven (het op internet zetten o.i.d., wordt het dan niet juist gestolen)?</p>
+	
+	
+	</div>
+
+
+<footer class="site-footer" id="contact">			
+<p class="designCredits">Designed by <a href="https://www.violatjew.nl">Viola Tjew-A-Sin.</a></p>
+	</footer>
+	
+	<a style="background-image: url('../site/images/cd-top-arrow.svg')" href="#0" class="cd-top">Top</a>
+
+
+</main>
+</body>
+
+<script>
+
+	var  mn = $(".main-nav");
+		mns = "main-nav-scrolled";
+		hdr = $('header').height();
+		sl = $(".small_logo");
+		sls = "small-logo-scrolled";
+		m = $(".main");
+		ms = "main-scrolled";
+
+	$(window).scroll(function() {
+	  if( $(this).scrollTop() > hdr ) {
+		mn.addClass(mns);
+		sl.addClass(sls);
+		m.addClass(ms);
+	  } else {
+		mn.removeClass(mns);
+		sl.removeClass(sls);
+		m.removeClass(ms);
+	  }
+	});
+
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 200,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
+
+	//hide or show the "back to top" link
+	
+	$(window).scroll(function() {
+	  if( $(this).scrollTop() > offset ) {
+		$back_to_top.addClass('cd-is-visible');
+	  } else {
+		$back_to_top.removeClass('cd-is-visible');
+	  }
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+	
+	
+</script>
+
+</html>

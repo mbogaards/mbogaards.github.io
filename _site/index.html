@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>Maarten Bogaards</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="site/css/reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="site/css/style.css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nav.js"></script>
+
+</head>
+
+<body>
+
+	<header>
+			<img id="logo" src="site/images/maartenheader.png" >
+	</header>
+	
+	<nav class="main-nav">
+		<img class="small_logo" src="site/images/small_logo.png">	
+		<ul>
+		
+  			<li><a href="#over">Over</a></li>
+  			<li><a href="#portfolio">Portfolio</a></li>
+  			<li><a href="#recensies">Recensies</a></li>
+  			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav><!-- #site-navigation -->
+	
+	<div class="main">
+
+<section id="over" style="background-image: url('site/images/portfolio_bg.png')">
+
+<div class="title-text-dark">
+		<h1 class="sectiontitle">Over mij</h1>
+	</div>
+	<div class="content-wrap-left">
+	<img class="maarten" src="site/images/maarten.jpg" >
+	</div>
+	
+	<div class="content-wrap-right" id="aboutmetext">
+		<p>De voortschrijdende digitalisering die internet mogelijk maakt heeft een enorme invloed op de manier waarop we leven en werken. Innovaties volgen elkaar in een hoog tempo op en de invloed op ons dagelijks leven is <b>immens</b>. Vandaag zijn de ontwikkelingen bij smartphones en IoT helemaal <b>‘hot’</b>, morgen kan het zomaar weer iets anders zijn.</p> 
+		<p>&nbsp;</p>
+		<p>Die innovatiekracht is voor mij <b>heel inspirerend</b>, maar organisaties kunnen die innovaties juist als bedreigend ervaren. Ik adviseer daarom organisaties over innovaties gerelateerde aan digitalisering. De laatste jaren ligt het accent vooral op digitale identiteit, privacy en vertrouwen. Deze onderwerpen zie ik als noodzakelijk voor verdere ontwikkelingen op het gebied van verder digitalisering van dienstverlening. Mijn bijdrage zit vaak op het grensvlak van ICT/technologie, business en gebruikers.</p>
+
+	</div>
+
+</section>
+
+<section id="portfolio" >
+
+	<div class="title-text">
+		<h1 class="sectiontitle"> Portfolio </h1>
+		<p>Hier zie je een selectie van mijn werk.</p>
+	</div>
+
+	<div class="content-wrap-left">
+
+	<article>
+	<a href="posts/sheetmusic.html" class="single-project" style="background-image: url('site/images/sheetmusic/main.jpg')">
+		<div class="project-overlay">
+			<h1 class="project-title">Mooie bladmuziek</h1>
+			<p class="project-description">Zelf gecomponeerd voor de piano.</p>
+	</div>
+	</a>
+	</article>
+	</div>
+
+	<div class="content-wrap-right">
+	<article>
+	<a href="posts/sheetmusic.html" class="single-project" style="background-image: url('site/images/meplaying/main.jpg')">
+		<div class="project-overlay">
+			<h1 class="project-title">Kijk mij spelen</h1>
+			<p class="project-description">Voor een groot publiek.</p>
+	</div>
+	</a>
+	</article>
+	</div>
+	
+	
+</section>
+
+<section id="recensies" style="background-image: url('site/images/portfolio_bg.png')">
+
+	<div class="title-text-dark">
+		<h1 class="sectiontitle">Recensies</h1>
+		<p>Wat andere mensen over mij hebben gezegd.</p>
+	</div>
+	
+	<div class="rec-container"> 
+		<p class="rec-text">"Dat de pianist put uit een verbluffend technisch arsenaal bevestigt hij in Liszts Totentanz. Alles wat neigt naar huiver en mysterie wast Bogaards schoon."</p>
+		<div class="name"><h4>Guido Van Oorschot <i>recensiemaker</i></h4>
+		</div>
+	</div>
+
+	<div class="rec-container"> 
+		<p class="rec-text">"Leuk voor kinderfeestjes en partijtjes."</p>
+		<div class="name"><h4>Sanne Toetoe <i>Moeder van zes</i></h4>
+	</div>
+	</div>
+	
+</section>
+
+<section id="contact">
+
+	<div class="title-text">
+		<h1 class="sectiontitle">Contact</h1>
+		<p>Stuur me een bericht!</p>
+	</div>
+	<footer class="site-footer" id="contact">
+			<a href="mailto:maartenbogaards@gmail.com" id="emailbutton" ></a>
+			<p class="designCredits">Designed by <a href="https://www.violatjew.nl">Viola Tjew-A-Sin.</a></p>
+	</footer>
+</section>
+
+<a style="background-image: url('site/images/cd-top-arrow.svg')" href="#0" class="cd-top">Top</a>
+
+</div>
+
+</body>
+
+<script>
+
+	var  mn = $(".main-nav");
+		mns = "main-nav-scrolled";
+		hdr = $('header').height();
+		sl = $(".small_logo");
+		sls = "small-logo-scrolled";
+		m = $(".main");
+		ms = "main-scrolled";
+
+	$(window).scroll(function() {
+	  if( $(this).scrollTop() > hdr ) {
+		mn.addClass(mns);
+		sl.addClass(sls);
+		m.addClass(ms);
+	  } else {
+		mn.removeClass(mns);
+		sl.removeClass(sls);
+		m.removeClass(ms);
+	  }
+	});
+
+	// browser window scroll (in pixels) after which the "back to top" link is shown
+	var offset = 400,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offset_opacity = 1200,
+		//duration of the top scrolling animation (in ms)
+		scroll_top_duration = 700,
+		//grab the "back to top" link
+		$back_to_top = $('.cd-top');
+
+	//hide or show the "back to top" link
+	
+	$(window).scroll(function() {
+	  if( $(this).scrollTop() > offset ) {
+		$back_to_top.addClass('cd-is-visible');
+	  } else {
+		$back_to_top.removeClass('cd-is-visible');
+	  }
+	});
+
+	//smooth scroll to top
+	$back_to_top.on('click', function(event){
+		event.preventDefault();
+		$('body,html').animate({
+			scrollTop: 0 ,
+		 	}, scroll_top_duration
+		);
+	});
+	
+	
+</script>
+
+</html>

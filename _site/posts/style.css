@@ -1,0 +1,511 @@
+/*--------------------------------------------------------------
+## Layout - general
+--------------------------------------------------------------*/
+html,
+body,
+button,
+input,
+select,
+textarea {
+	color: #191919;
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	margin: 0;
+	background-color: #424242;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+	max-width: 500px;
+	width: 40%;
+}
+
+/*--------------------------------------------------------------
+## Navigation - general
+--------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+} 
+
+header{
+}
+
+.main-nav,
+.main {
+  position: relative; 
+}
+
+.main-scrolled{
+	padding-top: 72px;
+	background-color: #424242;
+}
+
+.main-nav{
+	background: #424242;
+
+	height: 70px;
+	margin: 0 auto;
+	z-index: 150;
+}
+
+header,
+.main-nav-scrolled {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.main-nav ul {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 0;
+	text-align: center;
+}
+
+.main-nav ul li {
+	list-style: none;
+	display: inline;
+	color: #ffffff;
+	margin: 0 20px;
+
+}
+
+.main-nav ul li {
+	list-style: none;
+	display: inline;
+	color: #ffffff;
+	margin: 0 20px;
+	visibility: none;
+}
+
+.small_logo{
+	position: absolute;
+	left: 0;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-left: 5px;
+	width: 260px;
+	opacity: 1;
+	transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.small-logo-scrolled{
+	opacity: 1;
+}
+
+.main-nav ul li a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 5px 0;
+    text-decoration: none;
+    transition: 0.1s;
+	padding-top: 25px;
+	font-family: 'Merriweather', serif;
+ 
+}
+
+.main-nav ul li a:hover { 
+	border-bottom-style: solid;
+	color: #CB8F62;
+}
+
+.cd-top {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  box-shadow: 0 3px 3px rgba(0,0,0, .5);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #CB8F62 no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+  border-radius: 3px;
+}
+
+.cd-top.cd-is-visible, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+a.cd-top.cd-is-visible:hover{
+	background-color: #C99877;
+}
+
+.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+## Over
+--------------------------------------------------------------*/
+
+section#over {
+	min-height: 550px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #DBD1CA;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 100px;
+}
+
+.content-wrap-left{
+	width: 40%;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	left: 9%;
+	float: left;
+}
+
+.content-wrap-right{
+	width: 40%;
+	margin: 0 auto;
+	display: inline-block;
+	position: relative;
+	right: 9%;
+	float: right;
+}
+
+.content-wrap-left img{
+	min-width: 300px;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 3px;
+	display: block;
+	position: relative;
+}
+
+#aboutmetext p {
+	width:	90%;
+	margin: 0 auto;
+	text-align: justify;
+	display: block;
+	position: relative;
+	font-size: 1.1rem;
+}
+
+
+/*--------------------------------------------------------------
+## Portfolio
+--------------------------------------------------------------*/
+
+section#portfolio {
+	min-height: 550px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 100px;
+	background-color: #516156;
+}
+
+.title-text {
+	padding-top: 20px;
+	width:	50%;
+	margin: 0 auto;
+	text-align: center;
+	color: #ffffff;
+	padding-bottom: 20px;
+	position: relative;
+	font-size: 1em;
+}
+
+.title-text h1 {
+	font-family: 'Merriweather', serif;
+	
+}
+
+
+.title-text-dark {
+	padding-top: 20px;
+	width:	50%;
+	margin: 0 auto;
+	text-align: center;
+	color: #191919;
+	padding-bottom: 20px;
+	position: relative;
+	font-size: 1em;
+}
+
+.title-text-dark h1{
+	font-family: 'Merriweather', serif;
+}
+
+.sectiontitle {
+	font-size: 2.5em;
+	margin: 10px;
+	padding-top: 50px;
+}
+
+article{
+	padding: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 250px;
+}
+
+.single-project{
+	height: 230px;
+	margin: 0 auto;
+	border-radius: 3px;
+	display: block;
+	position: relative;
+	box-shadow: 0 3px 3px rgba(0,0,0, .5);
+}
+
+.single-project:hover a.single-project{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+}
+
+.single-project:hover .project-overlay{
+	opacity: .8;
+} 
+
+.project-overlay {
+	position: relative;
+	top: 0;
+	height: 100%;
+	width:100%;
+	opacity: 0;
+	background-color: #fff;
+	transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+}
+
+.project-title {
+	text-decoration: none;
+	color: #191919;
+	text-align: center;
+	margin: 0 auto;
+	border-bottom-style: none;
+		transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -webkit-transition: all 3s ease;
+  -o-transition: all 3s ease;
+ 
+}
+
+h1.project-title{
+	opacity: 1;
+	padding-top: 25%;
+}
+
+.project-description {
+	text-decoration: none;
+	color: #191919;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 0.75rem;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 2%;
+	opacity: 1;
+}
+
+/*--------------------------------------------------------------
+## Projects
+--------------------------------------------------------------*/
+
+.project-wrap{
+	width: 60%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+
+}
+
+.project-wrap img{
+	width: 100%;
+}
+
+p.project-text {
+	color: #fff;
+	width:	90%;
+	margin: 0 auto;
+	text-align: justify;
+	display: block;
+	position: relative;
+	font-size: .9em;
+	padding-top: 30px;
+}
+
+/*--------------------------------------------------------------
+## Recensies
+--------------------------------------------------------------*/
+
+section#recensies {
+	background-color: #827575;
+	min-height: 550px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 100px;
+}
+
+.rec-container{
+	padding: 10px 30px;
+	background-color: #fff;
+	width: 60%;
+	box-shadow: 0 3px 3px rgba(0,0,0, .5);
+	border-radius: 3px;
+	position: relative;
+	display: block;
+	margin: 30px auto;
+}
+
+.rec-text{
+	font-size: 1.5em;
+	color: 191919;
+}
+
+h4 {
+	margin:0 auto;
+}
+
+/*--------------------------------------------------------------
+## Layout - footer
+--------------------------------------------------------------*/
+
+.site-footer {
+	background-color: #424242;
+	height: 200px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	padding-bottom: 100px;
+}
+
+#emailbutton {
+	display:block;
+	position:relative;
+	top: 15px;
+	background-color:#CB8F62;
+	width:300px;
+	height:55px;
+	padding: 10px 0px 8px 0px;
+	margin:0 auto;
+	text-align:center;
+	font-size: 1.4rem;
+	color:#424242;
+	border-bottom: 5px solid #896043;
+	border-radius: 3px;
+}
+
+#emailbutton:hover {
+	background-color:#C99877;
+}
+
+#emailbutton:active {
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+}
+
+.designCredits {
+	margin-top: 150px;
+	text-align: center;
+	position: relative;
+	bottom: -25px;
+	font-size: .8em;
+}
+
+.designCredits a:visited { 
+    color: #827575;
+}
+
+/*--------------------------------------------------------------
+## Resizing
+--------------------------------------------------------------*/
+@media screen and (max-width:905px) {
+	img.small-logo-scrolled {
+		visibility: hidden;
+		opacity: 0;
+	}
+	
+}
+	
+@media screen and (max-width:730px) {
+	
+.content-wrap-left{
+	width: 80%;
+	margin: 0 auto;
+	float: none;
+	left: 10%;
+}
+
+.content-wrap-right{
+	width: 80%;
+	margin: 0 auto;
+	float: none;
+	left: 10%;
+	padding-top: 30px;
+}
+
+
+.content-wrap-left img{
+	min-width: 300px;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 3px;
+	display: block;
+	position: relative;
+}
+
+.content-wrap-right p {
+	width:	90%;
+	margin: 0 auto;
+	text-align: justify;
+	display: block;
+	position: relative;
+	font-size: 1.1rem;
+}
+
+	
+	.single-project{
+		width: 100%;
+		background-color: #593D3D;
+		margin-top: 30px;
+	}
+	
+}
+
+
+
+
