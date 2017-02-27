@@ -292,21 +292,24 @@ h1.sectiontitle{
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
+
 }
 
 article{
-	width: 70%;
+	padding: 0;
+	margin: 0 auto;
+	width: 350px;
+	height: 250px;
+	display: block;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.single-project{
+	height: 250px;
 	margin: 0 auto;
 	border-radius: 3px;
 	display: block;
-	position: relative;
-}
-
-a.single-project{
-	width: 100%;
-	margin: 0 auto;
-	border-radius: 3px;
-	display: inline-block;
 	position: relative;
 	box-shadow: 0 3px 3px rgba(0,0,0, .5);
 	transition: all 0.3s ease;
@@ -351,12 +354,13 @@ a.single-project{
   -ms-transition: all 3s ease;
   -webkit-transition: all 3s ease;
   -o-transition: all 3s ease;
- 
+
 }
 
 h1.project-title{
 	opacity: 1;
-	padding-top: 25%;
+	font-weight: bold;
+	padding-top: 30%;
 }
 
 .project-description {
@@ -364,12 +368,13 @@ h1.project-title{
 	color: #191919;
 	text-align: center;
 	margin: 0 auto;
-	font-size: 0.75rem;
+font-size: 0.8rem;
 	padding-left: 10%;
 	padding-right: 10%;
 	padding-top: 2%;
 	opacity: 1;
 }
+
 
 /*--------------------------------------------------------------
 ## Recensies
@@ -481,24 +486,43 @@ h4 {
 
 	
 }
-	
-@media screen and (max-width:730px) {
-	
-.content-wrap-left{
-	width: 80%;
-	margin: 0 auto;
-	float: none;
-	left: 10%;
+
+@media screen and (max-width:950px) {
+
+	article{
+		width: 300px;
+		height: 200px;
+	}
+
+	.single-project{
+		height: 200px;
+	}
+
+	h1.project-title{
+		padding-top: 25%;
+	}
+
+
 }
+
+@media screen and (max-width:800px) {
+	.content-wrap-left{
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+		left: 10%;
+	}
 
 .content-wrap-right{
-	width: 80%;
-	margin: 0 auto;
-	float: none;
-	left: 10%;
-	padding-top: 30px;
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+		left: 10%;
+		padding-top: 30px;
+	}
 }
-
+	
+@media screen and (max-width:730px) {
 
 img.maarten{
 
@@ -531,6 +555,20 @@ img.maarten{
 }
 
 @media screen and (max-width:480px) {
+
+	article{
+		width: 230px;
+		height: 150px;
+	}
+
+	.single-project{
+		height: 150px;
+	}
+
+	h1.project-title{
+		padding-top: 20%;
+	}
+
 
 	body{
 		margin: 0;
