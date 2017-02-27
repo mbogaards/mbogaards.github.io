@@ -15,7 +15,11 @@ textarea {
 }
 
 html{
-	height: 100%;
+	 width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 a{
@@ -26,6 +30,7 @@ body{
 	margin: 0;
 	padding-top: 19%;
 	background-color: #323641;
+
 }
 
 #logo {
@@ -44,7 +49,6 @@ body{
 } 
 
 header{
-
 	background-color: #323641;
 	z-index: -150;
 	width: 100%;
@@ -87,16 +91,8 @@ header,
 	display: inline;
 	color: #ffffff;
 	margin: 0 20px;
-
 }
 
-.main-nav ul li {
-	list-style: none;
-	display: inline;
-	color: #ffffff;
-	margin: 0 20px;
-	visibility: none;
-}
 
 .small_logo{
 	position: absolute;
@@ -122,14 +118,18 @@ header,
     color: #ffffff;
     padding: 5px 0;
     text-decoration: none;
-    transition: 0.1s;
+    transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 	padding-top: 25px;
 	font-family: 'Merriweather', serif;
  
 }
 
 .main-nav ul li a:hover { 
-	border-bottom-style: solid;
+	border-bottom: solid 3px;
 	color: #E15349;
 }
 
@@ -257,6 +257,7 @@ section#portfolio {
 	margin: 0 auto;
 	text-align: center;
 	color: #ffffff;
+	display: block;
 	padding-bottom: 20px;
 	position: relative;
 	font-size: 1em;
@@ -266,7 +267,6 @@ section#portfolio {
 	font-family: 'Merriweather', serif;
 	
 }
-
 
 .title-text-dark {
 	padding-top: 20px;
@@ -281,13 +281,17 @@ section#portfolio {
 
 .title-text-dark h1{
 	font-family: 'Merriweather', serif;
+		font-weight: 800;
 }
 
 h1.sectiontitle{
 	font-size: 2.5em;
-	margin: 10px;
+	padding-bottom: 10px;
 	padding-top: 50px;
-
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
 }
 
 article{
@@ -382,19 +386,26 @@ section#recensies {
 }
 
 .rec-container{
-	padding: 10px 30px;
+	padding: 30px 30px;
 	background-color: #fff;
 	width: 55%;
 	box-shadow: 0 3px 3px rgba(0,0,0, .5);
 	border-radius: 3px;
 	position: relative;
 	display: block;
-	margin: 30px auto;
+	margin: 0 auto;
+	margin-bottom:30px;
 }
 
 .rec-text{
 	font-size: 1.2em;
 	color: 191919;
+}
+
+.name{
+	font-size: 1.2em;
+	padding-top: 10px;
+	font-weight: bold;
 }
 
 h4 {
@@ -430,9 +441,7 @@ h4 {
   -ms-transition: all .3s ease;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
-
 }
-
 
 #emailbutton:hover {
 	background-image: url("../images/mailmehover.png");
@@ -491,8 +500,8 @@ h4 {
 }
 
 
-.content-wrap-left img{
-	min-width: 300px;
+img.maarten{
+
 	width: 90%;
 	margin: 0 auto;
 	border-radius: 3px;
@@ -509,8 +518,15 @@ h4 {
 	font-size: 1.1rem;
 }
 
-	
+	.main-nav ul li a {
+		font-size: .8em;
+	 
+	}
 
+	#emailbutton {
+		width:170px;
+		height: 100px;
+	}
 	
 }
 
@@ -533,16 +549,10 @@ h4 {
 	}
 
 	.main-nav ul li a {
-		font-size: .4em;
+		font-size: .7em;
 		display: inline-block;
 		position: relative;
 	 
-	}
-
-	img.maarten{
-		width: 30px;
-		position: relative;
-		float: left;
 	}
 
 	header,
@@ -550,6 +560,55 @@ h4 {
 	  position: fixed;
 	  width: 100%;
 	  top: 0;
+	}
+
+	#aboutmetext p {
+		text-align: justify;
+		font-size: .8rem;
+	}
+
+	.rec-text{
+		font-size: 0.9em;
+	}
+
+	.name {
+		font-size: 0.9em;
+		font-weight: bold;
+	}
+
+	.cd-top {
+	  height: 30px;
+	  width: 30px;
+
+	  bottom: 10px;
+	  right: 10px;
+
+	}
+
+	.main-nav ul li {
+		list-style: none;
+		display: inline;
+		color: #ffffff;
+		margin: 0 10px;
+	}
+
+	h1.sectiontitle{
+		font-size:1.5em;
+	}
+
+	.title-text p{
+		font-size:.8em;
+	}
+
+	.title-text-dark p{
+		font-size:.8em;
+	}
+
+	#emailbutton {
+		width:140px;
+		height: 80px;
+		background-size: contain;
+		background: url('../images/mailme.png') center no-repeat;
 	}
 
 }
