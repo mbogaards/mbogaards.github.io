@@ -218,6 +218,10 @@ section#over {
 	float: right;
 }
 
+.content-wrap-right h2{
+	font-size:1.3rem;
+}
+
 img.maarten{
 	min-width: 100px;
 	width: 90%;
@@ -228,12 +232,38 @@ img.maarten{
 }
 
 #aboutmetext p {
-	width:	90%;
-	margin: 0 auto;
-	text-align: justify;
+	width:	100%;
+	margin: 0;
+	
 	display: block;
 	position: relative;
+	font-size: 1rem;
+}
+
+#aboutmetext ul{
+	padding: 20px;
+
+}
+
+#aboutmetext ul li{
 	font-size: 1.1rem;
+	background: url("../images/bullet.png") no-repeat left center;
+	height:25px;
+	background-size: 8px 8px;
+}
+
+#aboutmetext a{
+	transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  font-weight:bold;
+  color: #323641;
+}
+
+#aboutmetext a:hover{
+	color: #E15349;
 }
 
 
@@ -258,7 +288,7 @@ section#portfolio {
 	text-align: center;
 	color: #ffffff;
 	display: block;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	position: relative;
 	font-size: 1em;
 }
@@ -274,7 +304,7 @@ section#portfolio {
 	margin: 0 auto;
 	text-align: center;
 	color: #191919;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
 	position: relative;
 	font-size: 1em;
 }
