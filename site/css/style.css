@@ -39,6 +39,7 @@ body{
 	width: 40%;
 	min-height:100px;
 	margin: 0 auto;
+
 }
 
 /*--------------------------------------------------------------
@@ -358,7 +359,6 @@ article{
   -webkit-transform: translate(0px,5px);
 }
 
-
 .project-overlay {
 	position: relative;
 	top: 0;
@@ -471,11 +471,11 @@ h4 {
 	background-size: contain;
 	background: url('../images/mailme.png') center no-repeat;
 	box-shadow: 0 3px 3px rgba(0,0,0, .5);
-	transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
+	transition: all .1s ease;
+  -moz-transition: all .1s ease;
+  -ms-transition: all .1s ease;
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
 }
 
 #emailbutton:hover {
@@ -493,7 +493,7 @@ h4 {
 	position: relative;
 	bottom: -25px;
 	font-size: .8em;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .designCredits a{ 
@@ -553,6 +553,12 @@ h4 {
 }
 	
 @media screen and (max-width:730px) {
+
+#aboutmetext ul li{
+	font-size: .8rem;
+	height:20px;
+	background-size: 5px 5px;
+}
 
 img.maarten{
 
