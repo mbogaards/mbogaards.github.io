@@ -33,6 +33,11 @@ body{
 
 }
 
+body:after{
+ display:none;
+ content: url("../images/mailmehover.png") url("../images/mailme.png");
+}
+
 #logo {
 	display: block;
 	max-width: 500px;
@@ -224,7 +229,7 @@ section#over {
 }
 
 img.maarten{
-	width: 60%;
+	width: 300px;
 	margin: 0 auto;
 	border-radius: 3px;
 	display: block;
@@ -330,7 +335,7 @@ article{
 	padding: 0;
 	margin: 0 auto;
 	width: 450px;
-	height: 300px;
+	height: 250px;
 	display: block;
 	position: relative;
 	margin-bottom: 30px;
@@ -471,11 +476,11 @@ h4 {
 	background-size: contain;
 	background: url('../images/mailme.png') center no-repeat;
 	box-shadow: 0 3px 3px rgba(0,0,0, .5);
-	transition: all .1s ease;
-  -moz-transition: all .1s ease;
-  -ms-transition: all .1s ease;
-  -webkit-transition: all .1s ease;
-  -o-transition: all .1s ease;
+	transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
 }
 
 #emailbutton:hover {
@@ -517,20 +522,22 @@ h4 {
 	
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:1200px) {
+
+	article{
+		width: 350px;
+		height: 200px;
+	}
 
 	.single-project{
 		height: 200px;
 	}
 
-	h1.project-title{
-		padding-top: 25%;
-	}
-
-
 }
 
 @media screen and (max-width:900px) {
+
+
 	.content-wrap-left{
 		width: 80%;
 		margin: 0 auto;
@@ -556,7 +563,7 @@ h4 {
 }
 
 img.maarten{
-
+	max-width: 300px;
 	width: 60%;
 	margin: 0 auto;
 	border-radius: 3px;
@@ -587,14 +594,6 @@ img.maarten{
 
 @media screen and (max-width:480px) {
 
-	article{
-		width: 230px;
-		height: 150px;
-	}
-
-	.single-project{
-		height: 150px;
-	}
 
 	h1.project-title{
 		padding-top: 20%;
@@ -683,4 +682,14 @@ img.maarten{
 }
 
 
+@media screen and (max-width:430px) {
+	article{
+		width: 230px;
+		height: 150px;
+	}
+
+	.single-project{
+		height: 150px;
+	}
+}
 
