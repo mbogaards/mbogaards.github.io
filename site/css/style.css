@@ -224,12 +224,12 @@ section#over {
 }
 
 img.maarten{
-	min-width: 100px;
-	width: 90%;
+	width: 60%;
 	margin: 0 auto;
 	border-radius: 3px;
 	display: block;
 	position: relative;
+	padding-top: 30px;
 }
 
 #aboutmetext p {
@@ -329,8 +329,8 @@ h1.sectiontitle{
 article{
 	padding: 0;
 	margin: 0 auto;
-	width: 350px;
-	height: 250px;
+	width: 450px;
+	height: 300px;
 	display: block;
 	position: relative;
 	margin-bottom: 30px;
@@ -519,11 +519,6 @@ h4 {
 
 @media screen and (max-width:950px) {
 
-	article{
-		width: 300px;
-		height: 200px;
-	}
-
 	.single-project{
 		height: 200px;
 	}
@@ -535,7 +530,7 @@ h4 {
 
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
 	.content-wrap-left{
 		width: 80%;
 		margin: 0 auto;
@@ -562,7 +557,7 @@ h4 {
 
 img.maarten{
 
-	width: 90%;
+	width: 60%;
 	margin: 0 auto;
 	border-radius: 3px;
 	display: block;
